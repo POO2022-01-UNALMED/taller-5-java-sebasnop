@@ -4,7 +4,7 @@ import gestion.Zona;
 
 public class Animal {
 	
-	private static int totalAnimales;
+	private int totalAnimales;
 	private String nombre;
 	private int edad;
 	private String habitat;
