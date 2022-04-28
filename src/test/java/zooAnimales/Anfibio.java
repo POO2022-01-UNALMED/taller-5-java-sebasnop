@@ -49,7 +49,7 @@ public class Anfibio extends Animal {
 	
 	// Getters Setters
 	
-	public int getRanas() {
+	public static int getRanas() {
 		return ranas;
 	}
 
@@ -57,7 +57,7 @@ public class Anfibio extends Animal {
 		Anfibio.ranas = ranas;
 	}
 
-	public int getSalamadras() {
+	public static int getSalamadras() {
 		return salamandras;
 	}
 
