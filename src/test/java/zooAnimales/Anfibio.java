@@ -8,8 +8,8 @@ public class Anfibio extends Animal {
 	private boolean venenoso;
 	
 	private static ArrayList<Anfibio> listado = new ArrayList<>();
-	public static int ranas;
-	public static int salamandras;
+	public static int ranas = 0;
+	public static int salamandras = 0;
 	
 	public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso) {
         super(nombre, edad, habitat, genero);
@@ -24,26 +24,25 @@ public class Anfibio extends Animal {
 	}
 	
 	public static Anfibio crearRana(String nombre,int edad,String genero){
-        String colorPiel = "rojo";
+        ranas++;
+		
+		String colorPiel = "rojo";
         Boolean venenoso = true;
         String habitat = "selva";
         Anfibio rana = new Anfibio(nombre,edad,habitat,genero,colorPiel,venenoso);
         listado.add(rana);
         
-        ranas++;
-        
         return rana;
     }
 
     public static Anfibio crearSalamandra(String nombre,int edad,String genero){
-    	
+        salamandras++;
         String colorPiel = "negro y amarillo";
         Boolean venenoso = false;
         String habitat = "selva";
 
         Anfibio salamandra = new Anfibio(nombre,edad,habitat,genero,colorPiel,venenoso);
         listado.add(salamandra);
-        salamandras++;
         return salamandra;
    }
 	
