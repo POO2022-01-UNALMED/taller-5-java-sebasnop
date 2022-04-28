@@ -20,7 +20,8 @@ public class Anfibio extends Animal {
     }
 	
 	public Anfibio() {
-		this(null,0,null,null,null,false);
+		listado.add(this);
+        setTotalAnfibios(1);
 	}
 	
 	public static Anfibio crearRana(String nombre,int edad,String genero){
