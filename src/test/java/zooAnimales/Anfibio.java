@@ -7,7 +7,7 @@ public class Anfibio extends Animal {
 	private String colorPiel;
 	private boolean venenoso;
 	
-	private static ArrayList<Anfibio> listado;
+	private static ArrayList<Anfibio> listado = new ArrayList<>();
 	public static int ranas = 0;
 	public static int salamandras = 0;
 	
